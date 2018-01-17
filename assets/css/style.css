@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 30px;
 	color: #5e5e5e;
 }
 
@@ -299,5 +299,21 @@ input[type=submit] {
 	.mobileLink {
 		font-size: 2em;
 		margin: 0 3%;
+	}
+}
+
+@media only screen and (max-width:450px) {
+	h1 {
+		font-size: 2em;
+		margin-right: 39%;
+	}
+
+	.mobileLink {
+		font-size:1em;
+		margin: 0 7%;
+	}
+
+	.gallery div {
+		font-size:2em;
 	}
 }
