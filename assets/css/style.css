@@ -100,7 +100,7 @@ footer {
 .content p {
 	padding: 2%;
 	line-height: 1.5;
-	font-size: 13px;
+	font-size: 1em;
 	color: #5e5e5e;
 }
 
@@ -217,10 +217,87 @@ input[type=submit] {
 
 /* --MEDIA QUERIES --*/
 
-@media only screen and (max-width:980px) {
+@media only screen and (min-width:768px) {
+	#mobileNav {
+		display: none;
+	}
+}
 
 @media only screen and (max-width:768px) {
+	.content {
+		width: 90%;
+		margin-bottom: 5%;
+	}
+
+	.sidebar {
+		clear: both;
+		float:none;
+		width: 90%;
+		margin-bottom: 20%;
+	}
+
+	.gallery img {
+		max-width: 90%;
+		max-height: 90%;
+	}
+
+	.gallery div {
+		width: 90.5%;
+	}
+
+	.navbar {
+		display: none;
+	}
+
+	.seperator {
+		display: none;
+	}
+
+	header {
+		margin-bottom:0;
+	}
+
+	#mobileNav {
+		clear: both;
+		width: 100%;
+		margin-left: 0;
+		padding: 3%;
+		background: #005a8e;
+		border-bottom: solid 2px #dddddd;
+		text-align: center;
+	}
+
+	.mobileLink {
+		text-decoration: none;
+		margin:0 5%;
+		color: white;
+		font-size: 2em;
+	}
+
+	.gallery div {
+		font-size: 3em;
+	}
+
+	footer {
+		position: relative;
+	}
+}
 
 @media only screen and (max-width:640px) {
-	
+	#profilePic {
+		clear: both;
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 2em;
+	}
+
+	.gallery div {
+		font-size: 4em;
+	}
+
+	.mobileLink {
+		font-size: 2em;
+		margin: 0 3%;
+	}
 }
